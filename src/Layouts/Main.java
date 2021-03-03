@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception { // Stage here is the main container
-        Parent root = FXMLLoader.load(getClass().getResource("borderpane.fxml")); // load UI from fxml file
+        Parent root = FXMLLoader.load(getClass().getResource("stackpane.fxml")); // load UI from fxml file
         primaryStage.setTitle("Hello JavaFX!");
         primaryStage.setScene(new Scene(root, 500, 275)); // add the scene to the stage
         primaryStage.show();
