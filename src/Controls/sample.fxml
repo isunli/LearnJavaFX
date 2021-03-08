@@ -18,6 +18,12 @@
 <?import javafx.collections.FXCollections?>
 <?import java.lang.String?>
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Accordion?>
 <GridPane xmlns="http://javafx.com/javafx"
           xmlns:fx="http://javafx.com/fxml"
           fx:controller="Controls.Controller"
@@ -88,4 +94,26 @@
             </FXCollections>
         </items>
     </ChoiceBox>
+    <Slider GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="4" min="0" max="100"
+            showTickLabels="true" showTickMarks="true" minorTickCount="4" snapToTicks="true"/>
+    <Spinner GridPane.rowIndex="2" GridPane.columnIndex="4" min="0" max="100" editable="true" initialValue="50"/>
+    <ColorPicker GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <DatePicker GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Accordion GridPane.rowIndex="3" GridPane.columnIndex="2" GridPane.columnSpan="2" expandedPane="$tp3">
+        <panes>
+            <TitledPane text="Titled Pane">
+                <Label text="Label in Title Pane"/>
+            </TitledPane>
+        </panes>
+        <panes>
+            <TitledPane text="Titled Pane2">
+                <Label text="Label in Title Pane"/>
+            </TitledPane>
+        </panes>
+        <panes>
+            <TitledPane fx:id="tp3" text="Titled Pane3">
+                <Label text="Label in Title Pane"/>
+            </TitledPane>
+        </panes>
+    </Accordion>
 </GridPane>
