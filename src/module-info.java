@@ -3,6 +3,6 @@ module LearnJavaFX {
     requires javafx.controls;
     requires jlfgr;
     // opens helloworldfx;
-    opens Events;
+    opens TodoList;
 
 }
