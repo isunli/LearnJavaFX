@@ -4,7 +4,18 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Font?>
-<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="TodoList.Controller">
+<BorderPane fx:id="mainBorderPane" xmlns:fx="http://javafx.com/fxml" fx:controller="TodoList.Controller">
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <items>
+                    <MenuItem text="New..." onAction="#showNewItemDialog"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Exit..."/>
+                </items>
+            </Menu>
+        </MenuBar>
+    </top>
     <left>
         <ListView fx:id="todoListView">
 
