@@ -5,6 +5,6 @@ module LearnJavaFX {
     requires javafx.web;
     requires java.desktop;
     // opens helloworldfx;
-    opens NewApp;
+    opens SceneBuilder;
 
 }
